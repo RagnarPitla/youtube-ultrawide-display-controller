@@ -1,0 +1,31 @@
+{
+  "name": "rbuild-ai-breath-app",
+  "version": "1.0.0",
+  "description": "Rbuild.ai Breath App - YouTube video display controller for ultrawide monitors",
+  "main": "./out/main/index.js",
+  "author": "Ragnar Pitla",
+  "scripts": {
+    "dev": "unset ELECTRON_RUN_AS_NODE && electron-vite dev",
+    "build": "electron-vite build",
+    "start": "unset ELECTRON_RUN_AS_NODE && electron-vite preview",
+    "postinstall": "electron-builder install-app-deps",
+    "pack:mac": "unset ELECTRON_RUN_AS_NODE && electron-vite build && electron-builder --mac --dir",
+    "dist:mac": "unset ELECTRON_RUN_AS_NODE && electron-vite build && electron-builder --mac",
+    "dist:win": "unset ELECTRON_RUN_AS_NODE && electron-vite build && electron-builder --win"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@electron-toolkit/tsconfig": "^1.0.1",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^34.0.0",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "typescript": "^5.7.0"
+  }
+}
